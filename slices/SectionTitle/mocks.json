@@ -1,0 +1,30 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"section_title_text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Pariatur minim aliquip excepteur do occaecat pariatur in amet aliqua fugiat voluptate nostrud veniam. Commodo ullamco nulla voluptate pariatur proident sunt laborum eiusmod ipsum ut quis et."
+						}
+					}
+				]
+			},
+			"scroll_animation": {
+				"__TYPE__": "FieldContent",
+				"value": "Fade In Top",
+				"type": "Select"
+			},
+			"section_title_alignment": {
+				"__TYPE__": "FieldContent",
+				"value": "Left",
+				"type": "Select"
+			}
+		},
+		"items": []
+	}
+]

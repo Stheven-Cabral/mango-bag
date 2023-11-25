@@ -1,0 +1,74 @@
+{
+  "id": "scroll_indicator",
+  "type": "SharedSlice",
+  "name": "ScrollIndicator",
+  "description": "ScrollIndicator",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "image_text_flow": {
+          "type": "Select",
+          "config": {
+            "label": "Image Text Flow",
+            "placeholder": "",
+            "options": [
+              "Top Bottom",
+              "Bottom Top",
+              "Left Right",
+              "Right Left"
+            ],
+            "default_value": "Top Bottom"
+          }
+        },
+        "scroll_indicator_type": {
+          "type": "Select",
+          "config": {
+            "label": "Scroll Indicator Type",
+            "placeholder": "",
+            "options": [
+              "Chevron",
+              "Arrow"
+            ],
+            "default_value": "Chevron"
+          }
+        },
+        "scroll_indicator_animation": {
+          "type": "Select",
+          "config": {
+            "label": "Scroll Indicator Animation",
+            "placeholder": "",
+            "options": [
+              "Static",
+              "Bounce"
+            ],
+            "default_value": "Static"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

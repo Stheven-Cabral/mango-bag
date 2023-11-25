@@ -1,0 +1,54 @@
+{
+  "id": "section_title",
+  "type": "SharedSlice",
+  "name": "SectionTitle",
+  "description": "SectionTitle",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "section_title_text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Section Title Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "section_title_alignment": {
+          "type": "Select",
+          "config": {
+            "label": "Section Title Alignment",
+            "placeholder": "",
+            "options": [
+              "Left",
+              "Center",
+              "Right"
+            ],
+            "default_value": "Left"
+          }
+        },
+        "scroll_animation": {
+          "type": "Select",
+          "config": {
+            "label": "Scroll Animation",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Fade In Bottom",
+              "Fade In Top"
+            ],
+            "default_value": "None"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

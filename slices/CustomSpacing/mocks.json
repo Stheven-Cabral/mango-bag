@@ -1,0 +1,14 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"custom_space_value": {
+				"__TYPE__": "FieldContent",
+				"value": "3",
+				"type": "Number"
+			}
+		},
+		"items": []
+	}
+]

@@ -1,0 +1,73 @@
+{
+  "id": "text_block",
+  "type": "SharedSlice",
+  "name": "TextBlock",
+  "description": "TextBlock",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "text_block_copy": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text Block Copy",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+            "labels": [
+              "special"
+            ]
+          }
+        },
+        "text_block_alignment": {
+          "type": "Select",
+          "config": {
+            "label": "Alignment",
+            "placeholder": "",
+            "options": [
+              "left",
+              "center",
+              "right"
+            ],
+            "default_value": "left"
+          }
+        },
+        "scroll_animation": {
+          "type": "Select",
+          "config": {
+            "label": "Scroll Animation",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Fade In Bottom",
+              "Fade In Top"
+            ],
+            "default_value": "None"
+          }
+        },
+        "set_full_bleed": {
+          "type": "Boolean",
+          "config": {
+            "label": "Set Full Bleed",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "custom_class": {
+          "type": "Text",
+          "config": {
+            "label": "Custom Class (Use Lower Kebab Case)",
+            "placeholder": "custom-text-block"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

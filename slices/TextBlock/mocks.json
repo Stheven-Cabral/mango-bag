@@ -1,0 +1,39 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"text_block_copy": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ullamco cupidatat reprehenderit amet velit exercitation cupidatat id in duis sunt exercitation fugiat."
+						}
+					}
+				]
+			},
+			"text_block_alignment": {
+				"__TYPE__": "FieldContent",
+				"value": "right",
+				"type": "Select"
+			},
+			"scroll_animation": {
+				"__TYPE__": "FieldContent",
+				"value": "None",
+				"type": "Select"
+			},
+			"set_full_bleed": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			},
+			"custom_class": {
+				"__TYPE__": "FieldContent",
+				"value": "enemy",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

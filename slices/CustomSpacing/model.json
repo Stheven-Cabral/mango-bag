@@ -1,0 +1,26 @@
+{
+  "id": "custom_spacing",
+  "type": "SharedSlice",
+  "name": "CustomSpacing",
+  "description": "CustomSpacing",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "custom_space_value": {
+          "type": "Number",
+          "config": {
+            "label": "Custom Space Value (px)",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
