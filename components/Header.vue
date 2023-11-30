@@ -9,7 +9,6 @@ const atLeadCapturePage = ref(false);
 const atAboutMePage = ref(false);
 const atPortfolioPage = ref(false);
 const atBlogPage = ref(false);
-const atTennisPage = ref(false);
 const showNavigationList = ref(false);
 const headerNavListExpandedOnMobile = ref(false);
 const headerNavListClasses = computed(() => ({
@@ -41,15 +40,12 @@ const setActiveHeaderLink = () => {
     case 'blog_page':
       atBlogPage.value = true;
       break;
-    case 'tennis_page':
-      atTennisPage.value = true;
-      break;
     default:
       break;
   };
 };
 
-onBeforeMount(() => {
+onMounted(() => {
   setActiveHeaderLink();
 });
 </script>
@@ -96,7 +92,8 @@ onBeforeMount(() => {
             to="/about-me" 
             :class="{
               'header__navigation-list-link': true, 
-              active: atAboutMePage}"
+              active: atAboutMePage
+            }"
             >
             About Me
           </NuxtLink>
@@ -115,14 +112,6 @@ onBeforeMount(() => {
             :class="{'header__navigation-list-link': true, active: atBlogPage}"
           >
           Blog
-          </NuxtLink>
-        </li>
-        <li class="header__navigation-list-item header__navigation-list-item--tennis-page">
-          <NuxtLink 
-            to="/tennis" 
-            :class="{'header__navigation-list-link': true, active: atTennisPage}"
-          >
-          Tennis
           </NuxtLink>
         </li>
       </ul>

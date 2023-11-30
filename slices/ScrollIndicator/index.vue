@@ -112,12 +112,16 @@ const instructionIconWrapperClasses = computed(() => ({
       &::after {
         content: '';
         display: block;
-        width: 100px;
-        height: 3px;
+        width: 6.25rem;
+        height: 0.188rem;
         background-color: var(--color-secondary);
         margin-top: 1rem;
         margin-left: auto;
         margin-right: auto;
+
+        @media (min-width: $bp-sm) {
+          width: 10rem;
+        }
       }
     }
   }
