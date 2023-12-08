@@ -29,4 +29,18 @@ const { data: document } = await useAsyncData('about-me', async () => {
 </template>
 
 <style lang="scss">
+.about-me-page {
+  .slice-zone {
+    a {
+      color: var(--color-primary);
+      text-decoration: underline solid 0.15rem var(--color-secondary);
+      text-underline-offset: 0.2rem;
+  
+      &:hover,
+      &:focus-visible {
+        text-decoration: none;
+      }
+    }
+  }
+}
 </style>

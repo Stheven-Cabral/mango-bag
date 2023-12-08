@@ -1,0 +1,165 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"list_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Fireplace"
+						}
+					}
+				]
+			},
+			"list_description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Dolor deserunt nulla nulla duis ad consequat nisi culpa."
+						}
+					}
+				]
+			},
+			"list_items": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Amet cillum in exercitation culpa. Tempor ullamco non laborum ad in velit. Occaecat officia qui consequat irure consequat ea tempor exercitation aliqua culpa."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "listTwoColumn",
+		"primary": {
+			"list_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Voyage"
+						}
+					}
+				]
+			},
+			"list_description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Dolore excepteur enim ea excepteur mollit proident. Minim pariatur ea voluptate sit id aliquip irure mollit pariatur reprehenderit esse."
+						}
+					}
+				]
+			},
+			"list_items_1": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Cupidatat proident officia fugiat irure excepteur tempor."
+						}
+					}
+				]
+			},
+			"list_items_2": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Amet culpa minim laboris esse sint consectetur deserunt esse enim cillum labore Lorem nostrud. Non deserunt ullamco do nostrud adipisicing dolore commodo ex."
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "listThreeColumn",
+		"primary": {
+			"list_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Tower"
+						}
+					}
+				]
+			},
+			"list_description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Amet anim ea ex sint ad esse commodo nulla ex mollit duis. Consectetur dolor ipsum enim laboris sit laborum dolor excepteur. Minim incididunt tempor dolore consectetur nisi est laborum cillum elit."
+						}
+					}
+				]
+			},
+			"list_items_1": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Reprehenderit cillum nulla enim sunt ullamco sit. Reprehenderit qui aliqua exercitation et enim veniam veniam magna magna sunt velit Lorem."
+						}
+					}
+				]
+			},
+			"list_items_2": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Non commodo ipsum aliqua exercitation incididunt dolor officia est ipsum non aliquip."
+						}
+					}
+				]
+			},
+			"list_items_3": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Nostrud laborum do qui et proident esse et amet dolore veniam dolore sint nostrud. Magna nisi officia pariatur quis minim velit ea voluptate aliquip consectetur officia anim enim."
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

@@ -184,7 +184,7 @@ onMounted(() => {
           border-bottom: 0.2rem solid transparent;
 
           &:hover,
-          &:focus {
+          &:focus-visible {
             color: var(--color-secondary);
           }
 
@@ -192,7 +192,7 @@ onMounted(() => {
             padding-bottom: 0.25rem;
 
             &:hover,
-            &:focus {
+            &:focus-visible {
               border-bottom: 0.2rem solid var(--color-secondary);
             }
           }

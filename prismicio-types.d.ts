@@ -5,6 +5,7 @@ import type * as prismic from "@prismicio/client";
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
 type AboutMePageDocumentDataSlicesSlice =
+  | ListSlice
   | ScrollIndicatorSlice
   | CustomSpacingSlice
   | SectionTitleSlice
@@ -23,8 +24,7 @@ interface AboutMePageDocumentData {
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#slices
    */
-  slices: prismic.SliceZone<AboutMePageDocumentDataSlicesSlice>
-  /**
+  slices: prismic.SliceZone<AboutMePageDocumentDataSlicesSlice> /**
    * Meta Description field in *About Me Page*
    *
    * - **Field Type**: Text
@@ -91,8 +91,7 @@ interface LeadCapturePageDocumentData {
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#slices
    */
-  slices: prismic.SliceZone<LeadCapturePageDocumentDataSlicesSlice>
-  /**
+  slices: prismic.SliceZone<LeadCapturePageDocumentDataSlicesSlice> /**
    * Meta Description field in *Lead Capture Page*
    *
    * - **Field Type**: Text
@@ -157,8 +156,7 @@ interface PortfolioPageDocumentData {
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#slices
    */
-  slices: prismic.SliceZone<PortfolioPageDocumentDataSlicesSlice>
-  /**
+  slices: prismic.SliceZone<PortfolioPageDocumentDataSlicesSlice> /**
    * Meta Description field in *Portfolio Page*
    *
    * - **Field Type**: Text
@@ -257,6 +255,197 @@ export type CustomSpacingSlice = prismic.SharedSlice<
   "custom_spacing",
   CustomSpacingSliceVariation
 >;
+
+/**
+ * Primary content in *List → Primary*
+ */
+export interface ListSliceDefaultPrimary {
+  /**
+   * List Title field in *List → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: list.primary.list_title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  list_title: prismic.RichTextField;
+
+  /**
+   * List Description field in *List → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: list.primary.list_description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  list_description: prismic.RichTextField;
+
+  /**
+   * List Items field in *List → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: list.primary.list_items
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  list_items: prismic.RichTextField;
+}
+
+/**
+ * Default variation for List Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ListSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<ListSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Primary content in *List → Primary*
+ */
+export interface ListSliceListTwoColumnPrimary {
+  /**
+   * List Title field in *List → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: list.primary.list_title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  list_title: prismic.RichTextField;
+
+  /**
+   * List Description field in *List → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: list.primary.list_description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  list_description: prismic.RichTextField;
+
+  /**
+   * List Items 1 field in *List → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: list.primary.list_items_1
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  list_items_1: prismic.RichTextField;
+
+  /**
+   * List Items 2 field in *List → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: list.primary.list_items_2
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  list_items_2: prismic.RichTextField;
+}
+
+/**
+ * List Two Column variation for List Slice
+ *
+ * - **API ID**: `listTwoColumn`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ListSliceListTwoColumn = prismic.SharedSliceVariation<
+  "listTwoColumn",
+  Simplify<ListSliceListTwoColumnPrimary>,
+  never
+>;
+
+/**
+ * Primary content in *List → Primary*
+ */
+export interface ListSliceListThreeColumnPrimary {
+  /**
+   * List Title field in *List → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: list.primary.list_title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  list_title: prismic.RichTextField;
+
+  /**
+   * List Description field in *List → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: list.primary.list_description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  list_description: prismic.RichTextField;
+
+  /**
+   * List Items 1 field in *List → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: list.primary.list_items_1
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  list_items_1: prismic.RichTextField;
+
+  /**
+   * List Items 2 field in *List → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: list.primary.list_items_2
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  list_items_2: prismic.RichTextField;
+
+  /**
+   * List Items 3 field in *List → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: list.primary.list_items_3
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  list_items_3: prismic.RichTextField;
+}
+
+/**
+ * List Three Column variation for List Slice
+ *
+ * - **API ID**: `listThreeColumn`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ListSliceListThreeColumn = prismic.SharedSliceVariation<
+  "listThreeColumn",
+  Simplify<ListSliceListThreeColumnPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *List*
+ */
+type ListSliceVariation =
+  | ListSliceDefault
+  | ListSliceListTwoColumn
+  | ListSliceListThreeColumn;
+
+/**
+ * List Shared Slice
+ *
+ * - **API ID**: `list`
+ * - **Description**: List
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ListSlice = prismic.SharedSlice<"list", ListSliceVariation>;
 
 /**
  * Primary content in *ScrollIndicator → Primary*
@@ -523,7 +712,7 @@ declare module "@prismicio/client" {
   interface CreateClient {
     (
       repositoryNameOrEndpoint: string,
-      options?: prismic.ClientConfig
+      options?: prismic.ClientConfig,
     ): prismic.Client<AllDocumentTypes>;
   }
 
@@ -543,6 +732,14 @@ declare module "@prismicio/client" {
       CustomSpacingSliceDefaultPrimary,
       CustomSpacingSliceVariation,
       CustomSpacingSliceDefault,
+      ListSlice,
+      ListSliceDefaultPrimary,
+      ListSliceListTwoColumnPrimary,
+      ListSliceListThreeColumnPrimary,
+      ListSliceVariation,
+      ListSliceDefault,
+      ListSliceListTwoColumn,
+      ListSliceListThreeColumn,
       ScrollIndicatorSlice,
       ScrollIndicatorSliceDefaultPrimary,
       ScrollIndicatorSliceVariation,

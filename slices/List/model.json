@@ -1,0 +1,149 @@
+{
+  "id": "list",
+  "type": "SharedSlice",
+  "name": "List",
+  "description": "List",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "list_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "List Title",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "heading1,heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "list_description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "List Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,strong,em,hyperlink"
+          }
+        },
+        "list_items": {
+          "type": "StructuredText",
+          "config": {
+            "label": "List Items",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "strong,em,hyperlink,list-item,o-list-item"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "listTwoColumn",
+      "name": "List Two Column",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "list_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "List Title",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "heading1,heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "list_description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "List Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,strong,em,hyperlink"
+          }
+        },
+        "list_items_1": {
+          "type": "StructuredText",
+          "config": {
+            "label": "List Items 1",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "list_items_2": {
+          "type": "StructuredText",
+          "config": {
+            "label": "List Items 2",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "strong,em,list-item,o-list-item,hyperlink"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "listThreeColumn",
+      "name": "List Three Column",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "list_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "List Title",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "heading1,heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "list_description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "List Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,strong,em,hyperlink"
+          }
+        },
+        "list_items_1": {
+          "type": "StructuredText",
+          "config": {
+            "label": "List Items 1",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "list_items_2": {
+          "type": "StructuredText",
+          "config": {
+            "label": "List Items 2",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "list_items_3": {
+          "type": "StructuredText",
+          "config": {
+            "label": "List Items 3",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "strong,em,hyperlink,list-item,o-list-item"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

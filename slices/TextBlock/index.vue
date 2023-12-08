@@ -100,6 +100,7 @@ onUnmounted(() => {
   opacity: 1;
   font-family: var(--font-secondary);
   font-size: 1.25rem;
+  color: var(--color-primary);
 
   @media (min-width: $bp-sm) {
     font-size: 1.5rem;

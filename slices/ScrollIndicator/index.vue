@@ -67,6 +67,7 @@ const instructionIconWrapperClasses = computed(() => ({
   justify-content: center;
   align-items: center;
   font-family: var(--font-secondary);
+  color: var(--color-primary);
 
   &__image-text {
     display: flex;

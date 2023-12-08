@@ -5,10 +5,11 @@ import { defineSliceZoneComponents } from "@prismicio/vue";
 
 export const components = defineSliceZoneComponents({
   custom_spacing: defineAsyncComponent(
-    () => import("./CustomSpacing/index.vue")
+    () => import("./CustomSpacing/index.vue"),
   ),
+  list: defineAsyncComponent(() => import("./List/index.vue")),
   scroll_indicator: defineAsyncComponent(
-    () => import("./ScrollIndicator/index.vue")
+    () => import("./ScrollIndicator/index.vue"),
   ),
   section_title: defineAsyncComponent(() => import("./SectionTitle/index.vue")),
   text_block: defineAsyncComponent(() => import("./TextBlock/index.vue")),
