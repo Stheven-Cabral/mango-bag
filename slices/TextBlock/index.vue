@@ -106,24 +106,10 @@ onUnmounted(() => {
     font-size: 1.5rem;
   }
 
-  &__wrapper {
-    padding: 0.5rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    &--full-bleed {
-      height: calc(100vh - 80px);
-
-      @media (min-width: $bp-2sm) {
-        height: calc(100vh - 87px);
-      }
-    }
-  }
-
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-primary);
     font-weight: bold;
+    padding-top: 1.5rem;
 
     &::after {
       content: '';
@@ -137,6 +123,10 @@ onUnmounted(() => {
         width: 10rem;
       }
     }
+
+    & + p {
+      padding-top: 1.5rem;
+    }
   }
 
   h1 { 
@@ -148,12 +138,35 @@ onUnmounted(() => {
   }
 
   p {
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     line-height: 2.5rem;
+
+    &:first-child {
+      padding-top: 1.5rem;
+    } 
   }
 
   span.special {
     color: var(--color-secondary);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--full-bleed {
+      padding: 0;
+      height: calc(100vh - 80px);
+
+      @media (min-width: $bp-2sm) {
+        height: calc(100vh - 87px);
+      }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      padding-top: 0;
+    }
   }
 
   &--left-aligned {

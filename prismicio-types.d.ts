@@ -271,6 +271,20 @@ export interface ListSliceDefaultPrimary {
   list_title: prismic.RichTextField;
 
   /**
+   * List Title Alignment field in *List → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: Left
+   * - **API ID Path**: list.primary.list_title_alignment
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  list_title_alignment: prismic.SelectField<
+    "Left" | "Center" | "Right",
+    "filled"
+  >;
+
+  /**
    * List Description field in *List → Primary*
    *
    * - **Field Type**: Rich Text
@@ -281,14 +295,52 @@ export interface ListSliceDefaultPrimary {
   list_description: prismic.RichTextField;
 
   /**
+   * List Description Alignment field in *List → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: Left
+   * - **API ID Path**: list.primary.list_description_alignment
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  list_description_alignment: prismic.SelectField<
+    "Left" | "Center" | "Right",
+    "filled"
+  >;
+
+  /**
    * List Items field in *List → Primary*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: list.primary.list_items
+   * - **API ID Path**: list.primary.list_items_1
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  list_items: prismic.RichTextField;
+  list_items_1: prismic.RichTextField;
+
+  /**
+   * Scroll Animation field in *List → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: list.primary.scroll_animation
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  scroll_animation: prismic.SelectField<"Fade In Bottom" | "Fade In Top">;
+
+  /**
+   * List Items Alignment field in *List → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: Left
+   * - **API ID Path**: list.primary.list_items_alignment
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  list_items_alignment: prismic.SelectField<
+    "Left" | "Center" | "Right",
+    "filled"
+  >;
 }
 
 /**
@@ -319,6 +371,20 @@ export interface ListSliceListTwoColumnPrimary {
   list_title: prismic.RichTextField;
 
   /**
+   * List Title Alignment field in *List → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: Left
+   * - **API ID Path**: list.primary.list_title_alignment
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  list_title_alignment: prismic.SelectField<
+    "Left" | "Center" | "Right",
+    "filled"
+  >;
+
+  /**
    * List Description field in *List → Primary*
    *
    * - **Field Type**: Rich Text
@@ -327,6 +393,20 @@ export interface ListSliceListTwoColumnPrimary {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   list_description: prismic.RichTextField;
+
+  /**
+   * List Description Alignment field in *List → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: Left
+   * - **API ID Path**: list.primary.list_description_alignment
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  list_description_alignment: prismic.SelectField<
+    "Left" | "Center" | "Right",
+    "filled"
+  >;
 
   /**
    * List Items 1 field in *List → Primary*
@@ -347,6 +427,30 @@ export interface ListSliceListTwoColumnPrimary {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   list_items_2: prismic.RichTextField;
+
+  /**
+   * Scroll Animation field in *List → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: list.primary.scroll_animation
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  scroll_animation: prismic.SelectField<"Fade In Bottom" | "Fade In Top">;
+
+  /**
+   * List Items Alignment field in *List → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: Left
+   * - **API ID Path**: list.primary.list_items_alignment
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  list_items_alignment: prismic.SelectField<
+    "Left" | "Center" | "Right",
+    "filled"
+  >;
 }
 
 /**
@@ -377,6 +481,20 @@ export interface ListSliceListThreeColumnPrimary {
   list_title: prismic.RichTextField;
 
   /**
+   * List Title Alignment field in *List → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: Left
+   * - **API ID Path**: list.primary.list_title_alignment
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  list_title_alignment: prismic.SelectField<
+    "Left" | "Center" | "Right",
+    "filled"
+  >;
+
+  /**
    * List Description field in *List → Primary*
    *
    * - **Field Type**: Rich Text
@@ -385,6 +503,16 @@ export interface ListSliceListThreeColumnPrimary {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   list_description: prismic.RichTextField;
+
+  /**
+   * List Description Alignment field in *List → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: list.primary.list_description_alignment
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  list_description_alignment: prismic.SelectField<"Left" | "Center" | "Right">;
 
   /**
    * List Items 1 field in *List → Primary*
@@ -415,6 +543,30 @@ export interface ListSliceListThreeColumnPrimary {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   list_items_3: prismic.RichTextField;
+
+  /**
+   * Scroll Animation field in *List → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: list.primary.scroll_animation
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  scroll_animation: prismic.SelectField<"Fade In Bottom" | "Fade in Top">;
+
+  /**
+   * List Items Alignment field in *List → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: Left
+   * - **API ID Path**: list.primary.list_items_alignment
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  list_items_alignment: prismic.SelectField<
+    "Left" | "Center" | "Right",
+    "filled"
+  >;
 }
 
 /**
