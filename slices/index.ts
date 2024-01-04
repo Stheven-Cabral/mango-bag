@@ -4,10 +4,16 @@ import { defineAsyncComponent } from "vue";
 import { defineSliceZoneComponents } from "@prismicio/vue";
 
 export const components = defineSliceZoneComponents({
+  content_navigation: defineAsyncComponent(
+    () => import("./ContentNavigation/index.vue"),
+  ),
   custom_spacing: defineAsyncComponent(
     () => import("./CustomSpacing/index.vue"),
   ),
   list: defineAsyncComponent(() => import("./List/index.vue")),
+  portfolio_cards: defineAsyncComponent(
+    () => import("./PortfolioCards/index.vue"),
+  ),
   scroll_indicator: defineAsyncComponent(
     () => import("./ScrollIndicator/index.vue"),
   ),

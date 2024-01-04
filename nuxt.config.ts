@@ -29,7 +29,11 @@ export default defineNuxtConfig({
         {
           type: 'about_me_page',
           path: '/about-me',
-        }
+        },
+        {
+          type: 'portfolio_page',
+          path: '/portfolio',
+        },
       ],
       accessToken: process.env.NUXT_PRISMIC_ACCESS_TOKEN,
     },

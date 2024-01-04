@@ -1,0 +1,106 @@
+{
+  "id": "portfolio_cards",
+  "type": "SharedSlice",
+  "name": "PortfolioCards",
+  "description": "PortfolioCards",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "headline": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Headline",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "heading1,heading2,heading3,heading4,heading5,heading6,em,strong"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "text_alignment": {
+          "type": "Select",
+          "config": {
+            "label": "Text Alignment",
+            "placeholder": "",
+            "options": [
+              "Left",
+              "Center",
+              "Right"
+            ],
+            "default_value": "Left"
+          }
+        },
+        "html_id": {
+          "type": "Text",
+          "config": {
+            "label": "HTML ID",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "work_example_image": {
+          "type": "Image",
+          "config": {
+            "label": "Work Example Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "work_example_title": {
+          "type": "Text",
+          "config": {
+            "label": "Work Example Title",
+            "placeholder": ""
+          }
+        },
+        "work_example_description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Work Example Description",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "multi": "paragraph,strong,em"
+          }
+        },
+        "work_example_skills": {
+          "type": "Text",
+          "config": {
+            "label": "Work Example Skills",
+            "placeholder": ""
+          }
+        },
+        "work_example_link": {
+          "type": "Link",
+          "config": {
+            "label": "Work Example Link",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "select": null
+          }
+        },
+        "work_example_code_link": {
+          "type": "Link",
+          "config": {
+            "label": "Work Example Code Link",
+            "placeholder": "",
+            "select": "media"
+          }
+        }
+      }
+    }
+  ]
+}

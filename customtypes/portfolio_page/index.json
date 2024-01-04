@@ -11,10 +11,10 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "text_block": {
+            "portfolio_cards": {
               "type": "SharedSlice"
             },
-            "section_title": {
+            "content_navigation": {
               "type": "SharedSlice"
             }
           }

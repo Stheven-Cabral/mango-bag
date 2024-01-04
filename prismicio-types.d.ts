@@ -141,7 +141,9 @@ export type LeadCapturePageDocument<Lang extends string = string> =
     Lang
   >;
 
-type PortfolioPageDocumentDataSlicesSlice = TextBlockSlice | SectionTitleSlice;
+type PortfolioPageDocumentDataSlicesSlice =
+  | PortfolioCardsSlice
+  | ContentNavigationSlice;
 
 /**
  * Content for Portfolio Page documents
@@ -210,6 +212,97 @@ export type AllDocumentTypes =
   | AboutMePageDocument
   | LeadCapturePageDocument
   | PortfolioPageDocument;
+
+/**
+ * Primary content in *ContentNavigation → Primary*
+ */
+export interface ContentNavigationSliceDefaultPrimary {
+  /**
+   * Headline field in *ContentNavigation → Primary*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content_navigation.primary.headline
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  headline: prismic.TitleField;
+
+  /**
+   * Description field in *ContentNavigation → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content_navigation.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Text Alignment field in *ContentNavigation → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: Left
+   * - **API ID Path**: content_navigation.primary.text_alignment
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  text_alignment: prismic.SelectField<"Left" | "Center" | "Right", "filled">;
+}
+
+/**
+ * Primary content in *ContentNavigation → Items*
+ */
+export interface ContentNavigationSliceDefaultItem {
+  /**
+   * Jump Link Title field in *ContentNavigation → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content_navigation.items[].jump_link_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  jump_link_title: prismic.KeyTextField;
+
+  /**
+   * Jump Link ID field in *ContentNavigation → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content_navigation.items[].jump_link_id
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  jump_link_id: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for ContentNavigation Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ContentNavigationSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<ContentNavigationSliceDefaultPrimary>,
+  Simplify<ContentNavigationSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *ContentNavigation*
+ */
+type ContentNavigationSliceVariation = ContentNavigationSliceDefault;
+
+/**
+ * ContentNavigation Shared Slice
+ *
+ * - **API ID**: `content_navigation`
+ * - **Description**: ContentNavigation
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ContentNavigationSlice = prismic.SharedSlice<
+  "content_navigation",
+  ContentNavigationSliceVariation
+>;
 
 /**
  * Primary content in *CustomSpacing → Primary*
@@ -600,6 +693,147 @@ type ListSliceVariation =
 export type ListSlice = prismic.SharedSlice<"list", ListSliceVariation>;
 
 /**
+ * Primary content in *PortfolioCards → Primary*
+ */
+export interface PortfolioCardsSliceDefaultPrimary {
+  /**
+   * Headline field in *PortfolioCards → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: portfolio_cards.primary.headline
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  headline: prismic.RichTextField;
+
+  /**
+   * Description field in *PortfolioCards → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: portfolio_cards.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Text Alignment field in *PortfolioCards → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: Left
+   * - **API ID Path**: portfolio_cards.primary.text_alignment
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  text_alignment: prismic.SelectField<"Left" | "Center" | "Right", "filled">;
+
+  /**
+   * HTML ID field in *PortfolioCards → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: portfolio_cards.primary.html_id
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  html_id: prismic.KeyTextField;
+}
+
+/**
+ * Primary content in *PortfolioCards → Items*
+ */
+export interface PortfolioCardsSliceDefaultItem {
+  /**
+   * Work Example Image field in *PortfolioCards → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: portfolio_cards.items[].work_example_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  work_example_image: prismic.ImageField<never>;
+
+  /**
+   * Work Example Title field in *PortfolioCards → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: portfolio_cards.items[].work_example_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  work_example_title: prismic.KeyTextField;
+
+  /**
+   * Work Example Description field in *PortfolioCards → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: portfolio_cards.items[].work_example_description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  work_example_description: prismic.RichTextField;
+
+  /**
+   * Work Example Skills field in *PortfolioCards → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: portfolio_cards.items[].work_example_skills
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  work_example_skills: prismic.KeyTextField;
+
+  /**
+   * Work Example Link field in *PortfolioCards → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: portfolio_cards.items[].work_example_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  work_example_link: prismic.LinkField;
+
+  /**
+   * Work Example Code Link field in *PortfolioCards → Items*
+   *
+   * - **Field Type**: Link to Media
+   * - **Placeholder**: *None*
+   * - **API ID Path**: portfolio_cards.items[].work_example_code_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  work_example_code_link: prismic.LinkToMediaField;
+}
+
+/**
+ * Default variation for PortfolioCards Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type PortfolioCardsSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<PortfolioCardsSliceDefaultPrimary>,
+  Simplify<PortfolioCardsSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *PortfolioCards*
+ */
+type PortfolioCardsSliceVariation = PortfolioCardsSliceDefault;
+
+/**
+ * PortfolioCards Shared Slice
+ *
+ * - **API ID**: `portfolio_cards`
+ * - **Description**: PortfolioCards
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type PortfolioCardsSlice = prismic.SharedSlice<
+  "portfolio_cards",
+  PortfolioCardsSliceVariation
+>;
+
+/**
  * Primary content in *ScrollIndicator → Primary*
  */
 export interface ScrollIndicatorSliceDefaultPrimary {
@@ -880,6 +1114,11 @@ declare module "@prismicio/client" {
       PortfolioPageDocumentData,
       PortfolioPageDocumentDataSlicesSlice,
       AllDocumentTypes,
+      ContentNavigationSlice,
+      ContentNavigationSliceDefaultPrimary,
+      ContentNavigationSliceDefaultItem,
+      ContentNavigationSliceVariation,
+      ContentNavigationSliceDefault,
       CustomSpacingSlice,
       CustomSpacingSliceDefaultPrimary,
       CustomSpacingSliceVariation,
@@ -892,6 +1131,11 @@ declare module "@prismicio/client" {
       ListSliceDefault,
       ListSliceListTwoColumn,
       ListSliceListThreeColumn,
+      PortfolioCardsSlice,
+      PortfolioCardsSliceDefaultPrimary,
+      PortfolioCardsSliceDefaultItem,
+      PortfolioCardsSliceVariation,
+      PortfolioCardsSliceDefault,
       ScrollIndicatorSlice,
       ScrollIndicatorSliceDefaultPrimary,
       ScrollIndicatorSliceVariation,

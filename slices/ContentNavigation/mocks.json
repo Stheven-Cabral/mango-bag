@@ -1,0 +1,58 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Dolore est reprehenderit fugiat ipsum esse id dolor dolore sint sunt cillum. Quis aute qui velit ea officia id. Sint laborum do velit anim aute Lorem sunt adipisicing irure minim deserunt dolore tempor."
+						}
+					}
+				]
+			},
+			"headline": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Engineer"
+						}
+					}
+				]
+			},
+			"text_alignment": {
+				"__TYPE__": "FieldContent",
+				"value": "Center",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"jump_link_title",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "shallow",
+							"type": "Text"
+						}
+					],
+					[
+						"jump_link_id",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "citizen",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	}
+]

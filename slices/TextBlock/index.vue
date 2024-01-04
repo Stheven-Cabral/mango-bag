@@ -26,12 +26,14 @@ const textBlockWrapperClasses = computed(() => {
   }
 });
 
+const textAlignment = computed(() => {
+  return props.slice.primary.text_block_alignment.toLocaleLowerCase();
+});
+
 const textBlockClasses = computed(() => {
   return {
     'text-block': true,
-    'text-block--left-aligned': props.slice.primary.text_block_alignment === 'left',
-    'text-block--center-aligned': props.slice.primary.text_block_alignment === 'center',
-    'text-block--right-aligned': props.slice.primary.text_block_alignment === 'right',
+    [`text-block--${textAlignment.value}-aligned`]: true,
     'text-block--fade-in-bottom': props.slice.primary.scroll_animation === 'Fade In Bottom',
     'text-block--fade-in-top': props.slice.primary.scroll_animation === 'Fade In Top',
   }
