@@ -765,12 +765,12 @@ export interface PortfolioCardsSliceDefaultItem {
   /**
    * Work Example Description field in *PortfolioCards → Items*
    *
-   * - **Field Type**: Rich Text
+   * - **Field Type**: Text
    * - **Placeholder**: *None*
    * - **API ID Path**: portfolio_cards.items[].work_example_description
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  work_example_description: prismic.RichTextField;
+  work_example_description: prismic.KeyTextField;
 
   /**
    * Work Example Skills field in *PortfolioCards → Items*
@@ -795,12 +795,12 @@ export interface PortfolioCardsSliceDefaultItem {
   /**
    * Work Example Code Link field in *PortfolioCards → Items*
    *
-   * - **Field Type**: Link to Media
+   * - **Field Type**: Link
    * - **Placeholder**: *None*
    * - **API ID Path**: portfolio_cards.items[].work_example_code_link
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  work_example_code_link: prismic.LinkToMediaField;
+  work_example_code_link: prismic.LinkField;
 }
 
 /**

@@ -59,12 +59,37 @@ const contentNavigationWrapperClasses = computed(() => {
 
 <style lang="scss">
 .content-navigation {
+  font-size: 1.25rem;
+  font-family: var(--font-secondary);
+  color: var(--color-primary);
+
+  @media (min-width: $bp-sm) {
+    font-size: 1.5rem;
+  }
+
+  h1 { 
+    font-size: 1.75em;
+  }
+
+  h2 { 
+    font-size: 1.25em;
+  }
+
   &__wrapper {
-    background-color: var(--color-secondary);
     height: calc(100vh - 80px);
     display: flex;
     justify-content: center;
     align-items: center;
-  } 
+  }
+
+  &__headline {
+    font-family: var(--font-primary);
+  }
+
+  &__jumplinks {
+    li {
+      list-style: none;
+    }
+  }
 }
 </style>

@@ -68,12 +68,10 @@
           }
         },
         "work_example_description": {
-          "type": "StructuredText",
+          "type": "Text",
           "config": {
             "label": "Work Example Description",
-            "placeholder": "",
-            "allowTargetBlank": false,
-            "multi": "paragraph,strong,em"
+            "placeholder": ""
           }
         },
         "work_example_skills": {
@@ -97,7 +95,8 @@
           "config": {
             "label": "Work Example Code Link",
             "placeholder": "",
-            "select": "media"
+            "allowTargetBlank": true,
+            "select": null
           }
         }
       }

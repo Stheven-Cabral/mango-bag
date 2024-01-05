@@ -27,7 +27,7 @@ const textBlockWrapperClasses = computed(() => {
 });
 
 const textAlignment = computed(() => {
-  return props.slice.primary.text_block_alignment.toLocaleLowerCase();
+  return props.slice.primary.text_block_alignment.toLowerCase();
 });
 
 const textBlockClasses = computed(() => {

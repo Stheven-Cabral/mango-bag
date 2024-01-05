@@ -186,10 +186,6 @@ onUnmounted(() => {
     font-size: 1.5rem;
   }
 
-  h1, h2, h3 {
-    font-weight: normal;
-  }
-
   h1 { 
     font-size: 1.75em;
   }

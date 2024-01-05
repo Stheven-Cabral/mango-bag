@@ -77,15 +77,9 @@
 					[
 						"work_example_description",
 						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "paragraph",
-									"content": {
-										"text": "Aliquip qui nulla excepteur et Lorem exercitation. Nulla ipsum tempor ad aliqua dolore commodo."
-									}
-								}
-							]
+							"__TYPE__": "FieldContent",
+							"value": "sell",
+							"type": "Text"
 						}
 					],
 					[
@@ -111,12 +105,8 @@
 						{
 							"__TYPE__": "LinkContent",
 							"value": {
-								"id": "mock_Media_link",
-								"kind": "image/jpeg",
-								"name": "mock_name",
-								"url": "https://source.unsplash.com/daily",
-								"size": "0",
-								"__TYPE__": "FileLink"
+								"__TYPE__": "ExternalLink",
+								"url": "https://slicemachine.dev"
 							}
 						}
 					]
