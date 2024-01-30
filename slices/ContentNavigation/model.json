@@ -27,7 +27,7 @@
             "label": "Description",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph,heading1,heading2,heading3,strong,em,hyperlink"
+            "multi": "paragraph,strong,em,hyperlink"
           }
         },
         "text_alignment": {

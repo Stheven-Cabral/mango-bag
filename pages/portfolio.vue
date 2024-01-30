@@ -24,7 +24,11 @@ const { data: document } = await useAsyncData('portfolio', async () => {
 <style lang="scss">
 .portfolio-page {
   .slice-zone {
-    a {
+    a:not(
+      .content-navigation__jumplink,
+      .portfolio-cards__example-page-link,
+      .portfolio-cards__example-source-link
+      ) {
       color: var(--color-primary);
       text-decoration: underline solid 0.15rem var(--color-secondary);
       text-underline-offset: 0.2rem;

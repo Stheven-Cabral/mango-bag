@@ -15,7 +15,7 @@
         "custom_space_value": {
           "type": "Number",
           "config": {
-            "label": "Custom Space Value (px)",
+            "label": "Custom Space (px)",
             "placeholder": ""
           }
         }

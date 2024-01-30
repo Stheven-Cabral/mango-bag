@@ -106,14 +106,14 @@ onMounted(() => {
           Portfolio
           </NuxtLink>
         </li>
-        <li class="header__navigation-list-item header__navigation-list-item--blog-page">
+        <!-- <li class="header__navigation-list-item header__navigation-list-item--blog-page">
           <NuxtLink 
             to="/blog" 
             :class="{'header__navigation-list-link': true, active: atBlogPage}"
           >
           Blog
           </NuxtLink>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>

@@ -68,11 +68,11 @@ const contentNavigationWrapperClasses = computed(() => {
   }
 
   h1 { 
-    font-size: 1.75em;
+    font-size: 1.8em;
   }
 
   h2 { 
-    font-size: 1.25em;
+    font-size: 1.3em;
   }
 
   &__wrapper {
@@ -80,15 +80,53 @@ const contentNavigationWrapperClasses = computed(() => {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &--text {
+      &-center {
+        text-align: center;
+      }
+
+      &-right {
+        text-align: right;
+      }
+    }
   }
 
   &__headline {
     font-family: var(--font-primary);
   }
 
+  &__description {
+    padding-top: 2rem;
+  }
+
   &__jumplinks {
+    padding-top: 2rem;
+
     li {
       list-style: none;
+      padding-top: 1rem;
+    }
+  }
+
+  &__jumplink {
+    font-family: var(--font-primary);
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    
+    text-decoration: underline solid 0.15rem var(--color-secondary);
+    text-underline-offset: 0.3rem;
+    color: var(--color-primary);
+
+    &:hover,
+    &:focus-visible {
+      text-decoration: none;
+      color: var(--color-secondary);
+    }
+
+    @media (min-width: $bp-sm) {
+      font-size: 1.75rem;
     }
   }
 }

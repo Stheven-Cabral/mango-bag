@@ -3,22 +3,26 @@ import { Content } from "@prismicio/client";
 
 // The array passed to `getSliceComponentProps` is purely optional.
 // Consider it as a visual hint for you when templating your slice.
-defineProps(
-  getSliceComponentProps<Content.CustomSpacingSlice>([
-    "slice",
-    "index",
-    "slices",
-    "context",
-  ])
+const props = defineProps(
+  getSliceComponentProps<Content.CustomSpacingSlice>()
 );
+
+const customSpaceValue = computed(() => {
+  return props.slice.primary.custom_space_value;
+});
+
+const customSpacingStyles = computed(() => {
+  return {
+    height: `${customSpaceValue.value}px`,
+  }
+});
 </script>
 
 <template>
   <section
     :data-slice-type="slice.slice_type"
     :data-slice-variation="slice.variation"
-  >
-    Placeholder component for custom_spacing (variation: {{ slice.variation }})
-    Slices
-  </section>
+    class="custom-spacing"
+    :style="customSpacingStyles"
+  />
 </template>

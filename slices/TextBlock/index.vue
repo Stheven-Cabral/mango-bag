@@ -90,10 +90,16 @@ onUnmounted(() => {
     :class="textBlockWrapperClasses"
     ref="textBlockWrapper"
   >
-  <prismic-rich-text
-    :field="slice.primary.text_block_copy"
-    :class="textBlockClasses"
-  />
+    <div :class="textBlockClasses">
+      <prismic-rich-text
+        :field="slice.primary.headline"
+        class="text-block__headline"
+      />
+      <prismic-rich-text
+        :field="slice.primary.text_block_copy"
+        class="text-block__copy"
+      />
+    </div>
   </section>
 </template>
 
@@ -139,13 +145,8 @@ onUnmounted(() => {
     font-size: 1.25em;
   }
 
-  p {
-    padding-top: 1rem;
-    line-height: 2.5rem;
-
-    &:first-child {
-      padding-top: 1.5rem;
-    } 
+  &__copy {
+    padding-top: 1.5rem;
   }
 
   span.special {
@@ -164,10 +165,12 @@ onUnmounted(() => {
       @media (min-width: $bp-2sm) {
         height: calc(100vh - 87px);
       }
-    }
 
-    h1, h2, h3, h4, h5, h6 {
-      padding-top: 0;
+      h1, h2, h3, h4, h5, h6 {
+        &:first-child {
+          padding-top: 0;
+        }
+      }
     }
   }
 

@@ -142,6 +142,7 @@ export type LeadCapturePageDocument<Lang extends string = string> =
   >;
 
 type PortfolioPageDocumentDataSlicesSlice =
+  | CustomSpacingSlice
   | PortfolioCardsSlice
   | ContentNavigationSlice;
 
@@ -309,7 +310,7 @@ export type ContentNavigationSlice = prismic.SharedSlice<
  */
 export interface CustomSpacingSliceDefaultPrimary {
   /**
-   * Custom Space Value (px) field in *CustomSpacing → Primary*
+   * Custom Space (px) field in *CustomSpacing → Primary*
    *
    * - **Field Type**: Number
    * - **Placeholder**: *None*
@@ -773,14 +774,14 @@ export interface PortfolioCardsSliceDefaultItem {
   work_example_description: prismic.KeyTextField;
 
   /**
-   * Work Example Skills field in *PortfolioCards → Items*
+   * Work Example Skills (List Only) field in *PortfolioCards → Items*
    *
-   * - **Field Type**: Text
+   * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
    * - **API ID Path**: portfolio_cards.items[].work_example_skills
-   * - **Documentation**: https://prismic.io/docs/field#key-text
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  work_example_skills: prismic.KeyTextField;
+  work_example_skills: prismic.RichTextField;
 
   /**
    * Work Example Link field in *PortfolioCards → Items*
@@ -801,6 +802,16 @@ export interface PortfolioCardsSliceDefaultItem {
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
   work_example_code_link: prismic.LinkField;
+
+  /**
+   * Custom Class (Lower Kebab Case) field in *PortfolioCards → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: portfolio_cards.items[].custom_class
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  custom_class: prismic.KeyTextField;
 }
 
 /**
@@ -1004,6 +1015,16 @@ export type SectionTitleSlice = prismic.SharedSlice<
  * Primary content in *TextBlock → Primary*
  */
 export interface TextBlockSliceDefaultPrimary {
+  /**
+   * Headline field in *TextBlock → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: text_block.primary.headline
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  headline: prismic.RichTextField;
+
   /**
    * Text Block Copy field in *TextBlock → Primary*
    *

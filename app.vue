@@ -4,16 +4,15 @@
 <template>
   <div class="main">
     <NuxtLayout>
-      <NuxtPage/>
+      <NuxtPage />
+      <BackToTop />
       <Footer />
     </NuxtLayout>
   </div>
 </template>
 
-<style>
-.hello {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3rem;
-  padding: 2rem;
+<style lang="scss">
+.main {
+  position: relative;
 }
 </style>

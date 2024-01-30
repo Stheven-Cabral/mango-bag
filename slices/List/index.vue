@@ -241,7 +241,7 @@ onUnmounted(() => {
 
       .list__column {
         max-width: 270px;
-        padding-top: 1rem;
+        padding-top: 1.5rem;
         padding-right: 3rem;
         padding-left: 3rem;
         line-height: 2rem;
@@ -266,7 +266,6 @@ onUnmounted(() => {
     h1, h2, h3 {
       font-family: var(--font-primary);
       font-weight: normal;
-      padding-top: 0.5rem;
       letter-spacing: 1px;
     }
 

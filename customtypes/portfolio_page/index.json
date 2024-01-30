@@ -11,6 +11,9 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "custom_spacing": {
+              "type": "SharedSlice"
+            },
             "portfolio_cards": {
               "type": "SharedSlice"
             },

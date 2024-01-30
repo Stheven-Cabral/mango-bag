@@ -9,7 +9,7 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Ullamco cupidatat reprehenderit amet velit exercitation cupidatat id in duis sunt exercitation fugiat."
+							"text": "Quis ad culpa magna quis esse Lorem. Quis aliquip duis duis officia eu labore culpa exercitation Lorem ea commodo occaecat velit. Elit quis irure deserunt sit ea dolore esse Lorem nisi laboris culpa exercitation aute amet non."
 						}
 					}
 				]
@@ -32,6 +32,17 @@
 				"__TYPE__": "FieldContent",
 				"value": "enemy",
 				"type": "Text"
+			},
+			"headline": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Somehow"
+						}
+					}
+				]
 			}
 		},
 		"items": []

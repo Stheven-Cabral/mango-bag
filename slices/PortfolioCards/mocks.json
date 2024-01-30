@@ -78,16 +78,22 @@
 						"work_example_description",
 						{
 							"__TYPE__": "FieldContent",
-							"value": "sell",
+							"value": "statement",
 							"type": "Text"
 						}
 					],
 					[
 						"work_example_skills",
 						{
-							"__TYPE__": "FieldContent",
-							"value": "steep",
-							"type": "Text"
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Pariatur adipisicing tempor exercitation aliquip consectetur laborum qui ea in laboris commodo. Duis dolore Lorem duis ex laboris enim Lorem esse. Culpa occaecat exercitation id minim excepteur ad ut mollit in sit proident."
+									}
+								}
+							]
 						}
 					],
 					[
@@ -108,6 +114,14 @@
 								"__TYPE__": "ExternalLink",
 								"url": "https://slicemachine.dev"
 							}
+						}
+					],
+					[
+						"custom_class",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "show",
+							"type": "Text"
 						}
 					]
 				]

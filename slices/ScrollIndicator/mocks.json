@@ -4,7 +4,6 @@
 		"variation": "default",
 		"primary": {
 			"image": {
-				"__TYPE__": "ImageContent",
 				"origin": {
 					"id": "main",
 					"url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea",
@@ -22,6 +21,9 @@
 					},
 					"background": "transparent"
 				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {}
 			},
 			"text": {
@@ -30,7 +32,7 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Amet mollit excepteur exercitation voluptate voluptate et irure et aliquip eu aliquip do velit eu adipisicing. Veniam ea ad aute aute."
+							"text": "Sunt laboris sit minim non tempor eiusmod qui amet fugiat aliqua consequat excepteur non. Deserunt quis Lorem eiusmod qui amet."
 						}
 					}
 				]

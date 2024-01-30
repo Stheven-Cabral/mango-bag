@@ -75,10 +75,12 @@
           }
         },
         "work_example_skills": {
-          "type": "Text",
+          "type": "StructuredText",
           "config": {
-            "label": "Work Example Skills",
-            "placeholder": ""
+            "label": "Work Example Skills (List Only)",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "list-item"
           }
         },
         "work_example_link": {
@@ -97,6 +99,13 @@
             "placeholder": "",
             "allowTargetBlank": true,
             "select": null
+          }
+        },
+        "custom_class": {
+          "type": "Text",
+          "config": {
+            "label": "Custom Class (Lower Kebab Case)",
+            "placeholder": ""
           }
         }
       }
