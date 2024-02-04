@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// Seperated component from PortfolioCards due to TS issue. Will combine in a later commit.
 const props = defineProps({
   skills: {
     type: Array,

@@ -51,7 +51,7 @@
     </div>
     <div class="footer__copyright">
       <div class="footer__copyright-text">
-        <p>Powered by Stheven Cabral</p>
+        <p>Powered by yours truly Stheven Cabral using Nuxt 3</p>
       </div>
     </div>
    </div>  

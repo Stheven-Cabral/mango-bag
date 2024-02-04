@@ -5,14 +5,14 @@
   <div class="main">
     <NuxtLayout>
       <NuxtPage />
-      <BackToTop />
       <Footer />
     </NuxtLayout>
+    <BackToTop />
   </div>
 </template>
 
 <style lang="scss">
 .main {
-  position: relative;
+  display: block;
 }
 </style>

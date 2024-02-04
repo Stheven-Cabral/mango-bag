@@ -16,7 +16,6 @@ const { data: document } = await useAsyncData('portfolio', async () => {
 <template>
   <div class="portfolio-page">
     <Header page-type="portfolio_page"/>
-    Portfolio Page
     <slice-zone v-if="document" wrapper="main" :components="components" :slices="document.data.slices" class="slice-zone portfolio-page__slice-zone"/>
   </div>
 </template>
@@ -26,8 +25,8 @@ const { data: document } = await useAsyncData('portfolio', async () => {
   .slice-zone {
     a:not(
       .content-navigation__jumplink,
-      .portfolio-cards__example-page-link,
-      .portfolio-cards__example-source-link
+      .portfolio-card__page-link,
+      .portfolio-card__source-link
       ) {
       color: var(--color-primary);
       text-decoration: underline solid 0.15rem var(--color-secondary);
