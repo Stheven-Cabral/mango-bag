@@ -122,9 +122,9 @@ const contentNavigationWrapperClasses = computed(() => {
     font-weight: bold;
     font-size: 1.15rem;
     letter-spacing: 1px;
-    text-decoration: underline solid 0.15rem var(--color-secondary);
-    text-underline-offset: 0.3rem;
     color: var(--color-primary);
+    border-bottom: solid 2px var(--color-secondary);
+    padding: 1px 4px;
 
     &:hover,
     &:focus-visible {

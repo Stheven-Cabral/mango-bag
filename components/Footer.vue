@@ -165,7 +165,7 @@
   &__copyright {
     bottom: 1rem;
     font-family: var(--font-secondary);
-    font-size: 1rem;
+    font-size: 0.75rem;
     text-align: center;
 
     @media (min-width: $bp-md) {
@@ -174,6 +174,7 @@
       grid-column-start: 1;
       grid-column-end: 3;
       align-self: end;
+      font-size: 1rem;
     }
   }
 }
