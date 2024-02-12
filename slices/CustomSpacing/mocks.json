@@ -7,6 +7,10 @@
 				"__TYPE__": "FieldContent",
 				"value": "93",
 				"type": "Number"
+			},
+			"mobile_only": {
+				"__TYPE__": "BooleanContent",
+				"value": true
 			}
 		},
 		"items": []

@@ -59,11 +59,15 @@ const contentNavigationWrapperClasses = computed(() => {
 
 <style lang="scss">
 .content-navigation {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: var(--font-secondary);
   color: var(--color-primary);
 
   @media (min-width: $bp-sm) {
+    font-size: 1.25rem;
+  }
+
+  @media (min-width: $bp-xl) {
     font-size: 1.5rem;
   }
 
@@ -76,10 +80,14 @@ const contentNavigationWrapperClasses = computed(() => {
   }
 
   &__wrapper {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 72px);
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: $bp-2sm) {
+      height: calc(100vh - 87px);
+    }
 
     &--text {
       &-center {
@@ -112,9 +120,8 @@ const contentNavigationWrapperClasses = computed(() => {
   &__jumplink {
     font-family: var(--font-primary);
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     letter-spacing: 1px;
-    
     text-decoration: underline solid 0.15rem var(--color-secondary);
     text-underline-offset: 0.3rem;
     color: var(--color-primary);
@@ -126,6 +133,10 @@ const contentNavigationWrapperClasses = computed(() => {
     }
 
     @media (min-width: $bp-sm) {
+      font-size: 1.5rem;
+    }
+
+    @media (min-width: $bp-xl) {
       font-size: 1.75rem;
     }
   }

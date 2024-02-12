@@ -11,6 +11,17 @@ const customSpaceValue = computed(() => {
   return props.slice.primary.custom_space_value;
 });
 
+const mobileOnlyCustomSpace = computed(() => {
+  return props.slice.primary.mobile_only;
+});
+
+const customSpaceComponentClass = computed(() => {
+  return {
+    'custom-spacing': true,
+    'custom-spacing--mobile-only': mobileOnlyCustomSpace.value === true,
+  }
+});
+
 const customSpacingStyles = computed(() => {
   return {
     height: `${customSpaceValue.value}px`,
@@ -22,7 +33,19 @@ const customSpacingStyles = computed(() => {
   <section
     :data-slice-type="slice.slice_type"
     :data-slice-variation="slice.variation"
-    class="custom-spacing"
+    :class="customSpaceComponentClass"
     :style="customSpacingStyles"
   />
 </template>
+
+<style lang="scss">
+.custom-spacing {
+  display: block;
+  
+  @media (min-width: $bp-sm) {
+    &--mobile-only {
+      display: none;
+    }
+  }
+}
+</style>

@@ -121,7 +121,7 @@ const examplesArray = computed<Array<any>>(() => {
     font-family: var(--font-primary);
     font-weight: bold;
     color: var(--color-white);
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
   }
 
   &__links {
@@ -150,7 +150,11 @@ const examplesArray = computed<Array<any>>(() => {
       overflow: hidden;
       transition: width 0.5s ease;
       font-family: var(--font-primary);
-      font-size: 1.25rem;
+      font-size: 1.15rem;
+
+      @media (min-width: $bp-sm) {
+        font-size: 1.25rem;
+      }
     }
 
     &:hover,
@@ -166,9 +170,17 @@ const examplesArray = computed<Array<any>>(() => {
   }
 
   &__description {
-    font-size: 18px;
+    font-size: 1rem;
     padding-top: 0.75rem;
     line-height: 1.5rem;
+
+    @media (min-width: $bp-sm) {
+      font-size: 1.15rem;
+    }
+
+    @media (min-width: $bp-xl) {
+      font-size: 1.25rem;
+    }
   }
 
   @media (min-width: $bp-2sm) {

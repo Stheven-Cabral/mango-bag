@@ -61,7 +61,7 @@ onMounted(() => {
         >
           <Icon 
             name="humbleicons:bars" 
-            size="3em" 
+            size="2.5em" 
             class="header__navigation-open-icon"
           />
         </button>
@@ -72,7 +72,7 @@ onMounted(() => {
         >
           <Icon 
             name="ci:close-big" 
-            size="3em" 
+            size="2.5em" 
             class="header__navigation-close-icon"
           />
         </button>
@@ -126,7 +126,7 @@ onMounted(() => {
   z-index: 1;
   width: 100%;
   background-color: var(--color-white);
-  min-height: 5rem;
+  min-height: 72px;
 
   @media (min-width: $bp-2sm) {
     min-height: 87px;
@@ -167,7 +167,7 @@ onMounted(() => {
       &-item {
         list-style: none;
         transition: all 0.1s ease-in-out;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-family: var(--font-secondary);
         padding: 1.5rem 0;
         text-align: center;

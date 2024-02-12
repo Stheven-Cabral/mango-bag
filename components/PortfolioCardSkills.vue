@@ -23,9 +23,17 @@ const skillsList = computed<Array<any>>(() => {
 
 <style lang="scss">
 .portfolio-card-skills {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   padding-top: 0.25rem;
+
+  @media (min-width: $bp-sm) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $bp-xl) {
+    font-size: 1rem;
+  }
   
   &__list {
     &-item {

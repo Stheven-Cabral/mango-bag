@@ -59,11 +59,15 @@ const portfolioExamples = computed(() => {
 
 <style lang="scss">
 .portfolio-cards {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: var(--font-secondary);
   color: var(--color-primary);
 
   @media (min-width: $bp-sm) {
+    font-size: 1.25rem;
+  }
+
+  @media (min-width: $bp-xl) {
     font-size: 1.5rem;
   }
 

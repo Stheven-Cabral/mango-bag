@@ -61,13 +61,17 @@ const instructionIconWrapperClasses = computed(() => ({
 
 <style lang="scss">
 .scroll-indicator {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 72px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: var(--font-secondary);
   color: var(--color-primary);
+
+  @media (min-width: $bp-2sm) {
+    height: calc(100vh - 87px);
+  }
 
   &__image-text {
     display: flex;
@@ -81,8 +85,13 @@ const instructionIconWrapperClasses = computed(() => ({
     border-radius: 50%;
 
     &-wrapper {
-      width: 12rem;
-      height: 12rem;
+      width: 10rem;
+      height: 10rem;
+
+      @media (min-width: $bp-sm) {
+        width: 12rem;
+        height: 12rem;
+      }
 
       @media (min-width: $bp-lg) {
         width: 13rem;
@@ -92,13 +101,17 @@ const instructionIconWrapperClasses = computed(() => ({
   }
 
   &__text {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
     line-height: 2.5rem;
 
 
     @media (min-width: $bp-sm) {
+      font-size: 1.25rem;
+    }
+
+    @media (min-width: $bp-xl) {
       font-size: 1.5rem;
     }
 
@@ -127,16 +140,20 @@ const instructionIconWrapperClasses = computed(() => ({
   }
 
   &__instruction {
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
 
     @media (min-width: $bp-sm) {
       padding-top: 3rem;
     }
 
     &-text {
-      font-size: 1rem;
+      font-size: 0.85rem;
 
       @media (min-width: $bp-sm) {
+        font-size: 1rem;
+      }
+
+      @media (min-width: $bp-xl) {
         font-size: 1.25rem;
       }
     }

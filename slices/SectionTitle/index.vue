@@ -27,11 +27,11 @@ const props = defineProps({
 <style lang="scss">
 .section-title {
   color: var(--color-primary);
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-family: var(--font-primary);
 
-  @media (min-width: $bp-2sm) {
-    font-size: 4rem;
+  @media (min-width: $bp-sm) {
+    font-size: 3rem;
   }
 
   &__wrapper {

@@ -85,17 +85,21 @@
   }
 
   &__contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 2rem;
     font-family: var(--font-primary);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     letter-spacing: 2px;
 
-    @media (min-width: $bp-2sm) {
-      font-size: 1.75rem;
+    @media (min-width: $bp-sm) {
+      font-size: 1.5rem;
     }
 
     @media (min-width: $bp-md) {
       padding-top: 0;
+      align-items: flex-start;
     }
 
     &-call-to-action {
@@ -103,7 +107,7 @@
 
       a {
         font-family: var(--font-primary);
-        font-size: 1.25rem;
+        font-size: 1rem;
         padding: 0.5rem 1rem;
         border-radius: 0.25rem;
         border-color: transparent;
@@ -115,6 +119,10 @@
         &:focus-visible {
           background-color: var(--color-secondary);
         }
+
+        @media (min-width: $bp-sm) {
+          font-size: 1.25rem;
+        }
       }
     }
   }
@@ -125,10 +133,10 @@
     align-items: center;
     padding-top: 3rem;
     font-family: var(--font-primary);
-    font-size: 1.15rem;
+    font-size: 1rem;
     letter-spacing: 2px;
 
-    @media (min-width: $bp-2sm) {
+    @media (min-width: $bp-sm) {
       font-size: 1.25rem;
     }
 
@@ -155,10 +163,10 @@
   }
 
   &__copyright {
-    position: absolute;
     bottom: 1rem;
     font-family: var(--font-secondary);
     font-size: 1rem;
+    text-align: center;
 
     @media (min-width: $bp-md) {
       position: relative;

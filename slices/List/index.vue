@@ -178,11 +178,15 @@ onUnmounted(() => {
 .list {
   padding: 1rem 0 0;
   font-family: var(--font-secondary);
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: var(--color-primary);
   margin: 0 auto;
 
   @media (min-width: $bp-sm) {
+    font-size: 1.25rem;
+  }
+
+  @media (min-width: $bp-xl) {
     font-size: 1.5rem;
   }
 
@@ -226,7 +230,7 @@ onUnmounted(() => {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.25rem;
+    font-size: 1rem;
 
     .list__column {
       padding-top: 1rem;
@@ -237,6 +241,7 @@ onUnmounted(() => {
       flex-direction: row;
       align-items: start;
       justify-content: center;
+      font-size: 1.25rem;
       line-height: 1.5rem;
 
       .list__column {
@@ -261,6 +266,10 @@ onUnmounted(() => {
         padding-right: 5rem;
         padding-left: 5rem;
       }
+    }
+
+    @media (min-width: $bp-xl) {
+      font-size: 1.5rem;
     }
 
     h1, h2, h3 {

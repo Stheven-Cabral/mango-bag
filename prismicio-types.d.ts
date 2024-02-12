@@ -318,6 +318,17 @@ export interface CustomSpacingSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#number
    */
   custom_space_value: prismic.NumberField;
+
+  /**
+   * Mobile Only field in *CustomSpacing → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: custom_spacing.primary.mobile_only
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  mobile_only: prismic.BooleanField;
 }
 
 /**

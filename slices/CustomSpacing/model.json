@@ -18,6 +18,15 @@
             "label": "Custom Space (px)",
             "placeholder": ""
           }
+        },
+        "mobile_only": {
+          "type": "Boolean",
+          "config": {
+            "label": "Mobile Only",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
         }
       },
       "items": {}
