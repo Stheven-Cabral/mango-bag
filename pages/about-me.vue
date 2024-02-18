@@ -31,6 +31,16 @@ const { data: document } = await useAsyncData('about-me', async () => {
 <style lang="scss">
 .about-me-page {
   .slice-zone {
+    .text-block__copy {
+      p {
+        line-height: 1.5rem;
+
+        @media (min-width: $bp-sm) {
+          line-height: 2.5rem;
+        }
+      }
+    }
+
     a {
       color: var(--color-primary);
       text-decoration: underline solid 0.15rem var(--color-secondary);
