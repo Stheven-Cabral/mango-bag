@@ -11,8 +11,6 @@ const { data: document } = await useAsyncData('about-me', async () => {
     throw createError({ statusCode: 404, message: "Page not found" });
   }
 });
-
-// const componentsList = computed(() => components);
 </script>
 
 <template>
