@@ -12,7 +12,10 @@ const examplesArray = computed<Array<any>>(() => {
 </script>
 
 <template>
-  <div v-for="example in examplesArray" :class="`portfolio-card ${example.custom_class}`">
+  <div
+    v-for="example in examplesArray"
+    :class="`portfolio-card ${example.custom_class}`"
+  >
     <div class="portfolio-card__image-container">
       <div class="portfolio-card__image">
         <prismic-image :field="example.work_example_image" />
@@ -33,7 +36,7 @@ const examplesArray = computed<Array<any>>(() => {
           />
         </a>
         <a
-        v-if="example.work_example_code_link.url"
+          v-if="example.work_example_code_link.url"
           class="portfolio-card__source-link"
           :href="`${example.work_example_code_link.url}`"
           target="_blank"
@@ -66,7 +69,7 @@ const examplesArray = computed<Array<any>>(() => {
   }
 
   &.no-display {
-    display: block;
+    display: none;
   }
 
   &:first-child {
@@ -80,7 +83,7 @@ const examplesArray = computed<Array<any>>(() => {
   &:nth-child(2) {
     @media (min-width: $bp-sm) {
       padding-top: 1.85rem;
-    } 
+    }
   }
 
   &__image-container {
@@ -100,7 +103,7 @@ const examplesArray = computed<Array<any>>(() => {
     }
 
     &::after {
-      content: '';
+      content: "";
       height: auto;
       width: 100%;
       position: absolute;
@@ -108,7 +111,11 @@ const examplesArray = computed<Array<any>>(() => {
       right: 0;
       top: 0;
       bottom: 0;
-      background: linear-gradient(160deg, var(--color-primary), transparent 100%);
+      background: linear-gradient(
+        160deg,
+        var(--color-primary),
+        transparent 100%
+      );
       transition: background-color 0.5s ease;
     }
   }
